@@ -1,6 +1,7 @@
 # Physics-Informed-Machine-Learning-Modeling-for-MTTF-Prediction
 
-The goal of this research is to develop a adaptive surrogate modeling method to predict the mean time to failure for complex system.
-The active learning function is develop to select the optimal training points to refine the model.
+The Mean Time to Failure (MTTF) is a critical metric for assessing the reliability of non-repairable systems, and it plays a significant role in incident management. However, accurately estimating MTTF can be challenging due to the expensive physics-based simulation models. To address this challenge, this paper proposes an adaptive surrogate modeling method that approximates the failure modes in simulation model with a computationally efficient model to predict the MTTF during the design stage. Firstly, the proposed method initially trains Gaussian process (GP) surrogate models for the failure modes. Then, the composite expected feasibility function is proposed to identify the new information, such as input variables, time instances, and component index, to refine the surrogate models. In the end, the MTTF can be calculated by taking the expected value of the system’s first time to failure with the available GP models. The proposed method has the capability of forecasting MTTF for series systems, parallel systems, and mixed systems. To showcase its efficacy, we provide a mathematic and
+two physics-based simulation examples, which demonstrate the adaptive surrogate modeling method can accurately predict the MTTF of the system in physics-based simulation model.
 
-Please go to see Main.m file and a mathmatical example with four failure modes in mixed system is used to varify the proposed method
+
+Wu, Hao, et al. "Adaptive machine learning with physics-based simulations for mean time to failure prediction of engineering systems." Reliability Engineering & System Safety 240 (2023): 109553.
